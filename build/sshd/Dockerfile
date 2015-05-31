@@ -1,7 +1,5 @@
 FROM debian:latest
-RUN apt-get update && apt-get upgrade -y \
-    && apt-get install -y openssh-server vim zsh git tmux figlet \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get upgrade -y && apt-get install -y openssh-server vim zsh git tmux figlet && rm -rf /var/lib/apt/lists/*
 
 # config
 RUN rm /etc/ssh/*
