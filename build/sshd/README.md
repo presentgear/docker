@@ -13,4 +13,5 @@ Do not try to ssh as root, instead use: "ssh ssher@hostname" with a key.
 You should probably build this yourself, if you cared enough to read that blog post.
 
 Example:
+
     docker run --name="sshd" -v /etc/localtime:/etc/localtime:ro -v $HOME:/home/ssher -p 22022:22 -d presentgear/sshd:latest
